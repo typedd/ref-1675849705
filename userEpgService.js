@@ -19,7 +19,7 @@ import type {
 } from '@msp/backend-types-flow/src/types';
 */
 
-const getUsersPlayableTveChannels = function (requestData /* : any */, deviceKey /* : any */, channelGuids /* : any */, callback /* : any */) /* : any */ {
+const getUsersPlayableTveChannels = function (requestData /* : any */, deviceKey /* : any */, channelGuids /* : any */, callback /* : any */) /* : void */ {
 	const { createCallMspServiceMethodCommand } = require('../util/callMSPServiceStub')(log);
 	const { createRequest: createGetUserPlayableTveChannelsRequest/* , circuitBreaker */ }
         = createCallMspServiceMethodCommand('user-epg', 'GetUserPlayableTveChannels', {});
