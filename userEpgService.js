@@ -66,6 +66,6 @@ const getUsersPlayableTveChannels = function (requestData /* : any */, deviceKey
 	}
 };
 
-module.exports = {
+module.exports = ({
 	getUsersPlayableTveChannels
-};
+} /* : ? */);
